@@ -1,0 +1,137 @@
+<?php
+include 'db.php';
+
+$id = $_GET['id'];
+$result = $conn->query("SELECT * FROM articulos WHERE id = $id");
+$articulo = $result->fetch_assoc();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'];
+    $marca = $_POST['marca'];
+    $cantidad = $_POST['cantidad'];
+    $bodega = $_POST['bodega'];
+
+    $conn->query("UPDATE articulos SET nombre = '$nombre', marca = '$marca', cantidad = $cantidad, bodega = '$bodega' WHERE id = $id");
+    header('Location: index.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Artículo</title>
+</head>
+<body>
+    <h1>Editar Artículo</h1>
+    <form method="POST">
+        <label>Nombre: <input type="text" name="nombre" value="<?= $articulo['nombre'] ?>" required></label><br>
+        <label>Marca: <input type="text" name="marca" value="<?= $articulo['marca'] ?>" required></label><br>
+        <label>Cantidad: <input type="number" name="cantidad" value="<?= $articulo['cantidad'] ?>" required></label><br>
+        <label>Bodega: <input type="text" name="bodega" value="<?= $articulo['bodega'] ?>" required></label><br>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html><?php
+include 'db.php';
+
+$id = $_GET['id'];
+$result = $conn->query("SELECT * FROM articulos WHERE id = $id");
+$articulo = $result->fetch_assoc();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'];
+    $marca = $_POST['marca'];
+    $cantidad = $_POST['cantidad'];
+    $bodega = $_POST['bodega'];
+
+    $conn->query("UPDATE articulos SET nombre = '$nombre', marca = '$marca', cantidad = $cantidad, bodega = '$bodega' WHERE id = $id");
+    header('Location: index.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Artículo</title>
+</head>
+<body>
+    <h1>Editar Artículo</h1>
+    <form method="POST">
+        <label>Nombre: <input type="text" name="nombre" value="<?= $articulo['nombre'] ?>" required></label><br>
+        <label>Marca: <input type="text" name="marca" value="<?= $articulo['marca'] ?>" required></label><br>
+        <label>Cantidad: <input type="number" name="cantidad" value="<?= $articulo['cantidad'] ?>" required></label><br>
+        <label>Bodega: <input type="text" name="bodega" value="<?= $articulo['bodega'] ?>" required></label><br>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html><?php
+include 'db.php';
+
+$id = $_GET['id'];
+$result = $conn->query("SELECT * FROM articulos WHERE id = $id");
+$articulo = $result->fetch_assoc();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'];
+    $marca = $_POST['marca'];
+    $cantidad = $_POST['cantidad'];
+    $bodega = $_POST['bodega'];
+
+    $conn->query("UPDATE articulos SET nombre = '$nombre', marca = '$marca', cantidad = $cantidad, bodega = '$bodega' WHERE id = $id");
+    header('Location: index.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Artículo</title>
+</head>
+<body>
+    <h1>Editar Artículo</h1>
+    <form method="POST">
+        <label>Nombre: <input type="text" name="nombre" value="<?= $articulo['nombre'] ?>" required></label><br>
+        <label>Marca: <input type="text" name="marca" value="<?= $articulo['marca'] ?>" required></label><br>
+        <label>Cantidad: <input type="number" name="cantidad" value="<?= $articulo['cantidad'] ?>" required></label><br>
+        <label>Bodega: <input type="text" name="bodega" value="<?= $articulo['bodega'] ?>" required></label><br>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html><?php
+include 'db.php';
+
+$id = $_GET['id'];
+$result = $conn->query("SELECT * FROM articulos WHERE id = $id");
+$articulo = $result->fetch_assoc();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'];
+    $marca = $_POST['marca'];
+    $cantidad = $_POST['cantidad'];
+    $bodega = $_POST['bodega'];
+
+    $conn->query("UPDATE articulos SET nombre = '$nombre', marca = '$marca', cantidad = $cantidad, bodega = '$bodega' WHERE id = $id");
+    header('Location: index.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Artículo</title>
+</head>
+<body>
+    <h1>Editar Artículo</h1>
+    <form method="POST">
+        <label>Nombre: <input type="text" name="nombre" value="<?= $articulo['nombre'] ?>" required></label><br>
+        <label>Marca: <input type="text" name="marca" value="<?= $articulo['marca'] ?>" required></label><br>
+        <label>Cantidad: <input type="number" name="cantidad" value="<?= $articulo['cantidad'] ?>" required></label><br>
+        <label>Bodega: <input type="text" name="bodega" value="<?= $articulo['bodega'] ?>" required></label><br>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>
