@@ -1,6 +1,6 @@
 <?php
 $host = "mysql-dcosof.alwaysdata.net"; // Servidor de la base de datos
-$user = "dcosof_nuevosarticulos";       // Usuario de la base de datos
+$user = "dcosof";       // Usuario de la base de datos
 $password = "clase1234";               // Contraseña del usuario
 $dbname = "dcosof_nuevosarticulos";     // Nombre de la base de datos
 
